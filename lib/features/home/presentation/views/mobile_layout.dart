@@ -31,7 +31,7 @@ class MobileLayout extends StatelessWidget {
             // Projects Section
             _buildSectionHeader(
               context,
-              "Featured Projects",
+              "Main Projects",
               Icons.work_outline,
             ),
             const SizedBox(height: 24),

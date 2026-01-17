@@ -14,7 +14,7 @@ class StatsSection extends StatelessWidget {
     final stats = [
       _StatItem(
         value: '${vm.projectCount}+',
-        label: 'Projects',
+        label: 'Main Projects',
         icon: Icons.folder_copy_outlined,
       ),
       _StatItem(
