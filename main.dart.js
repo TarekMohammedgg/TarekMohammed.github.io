@@ -63402,7 +63402,7 @@ CC(a,b){var s,r=this.c?B.ck:B.eX,q=b.ok.y
 if(q==null)q=null
 else{s=b.ax.k3
 s=q.o7(A.aG(204,s.C()>>>16&255,s.C()>>>8&255,s.C()&255),1.6)
-q=s}return A.cp("Hands-on experience developing complete applications from concept to deployment. Specialized in AI integration, Clean Architecture, and efficient State Management.",null,null,q,r)},
+q=s}return A.cp("Crafting production-ready Flutter applications with a focus on AI integration, Clean Architecture, and optimized performance.",null,null,q,r)},
 CD(a,b,c){var s=null,r=c.ax
 return A.ae5(B.A8,B.N1,new A.SP(b),A.ae6(s,s,r.b,s,s,s,4,s,s,r.c,s,s,B.fO,s,new A.ca(A.cB(12),B.r),s,s,s,s,s))}}
 A.SQ.prototype={
