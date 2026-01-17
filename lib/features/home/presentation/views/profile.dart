@@ -93,8 +93,21 @@ class MyPortfolioApp extends StatelessWidget {
   }
 }
 
-class _PortfolioScaffold extends StatelessWidget {
+class _PortfolioScaffold extends StatefulWidget {
   const _PortfolioScaffold();
+
+  @override
+  State<_PortfolioScaffold> createState() => _PortfolioScaffoldState();
+}
+
+class _PortfolioScaffoldState extends State<_PortfolioScaffold> {
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Precache the profile image to prevent flickering
+    final vm = context.read<PortfolioViewModel>();
+    precacheImage(AssetImage(vm.profileImagePath), context);
+  }
 
   @override
   Widget build(BuildContext context) {
