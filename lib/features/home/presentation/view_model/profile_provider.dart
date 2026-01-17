@@ -4,6 +4,15 @@ import 'package:tarek_mohammed_portfolio/features/home/data/models/skill_model.d
 import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioViewModel extends ChangeNotifier {
+  // Theme state
+  bool _isDarkMode = true;
+  bool get isDarkMode => _isDarkMode;
+
+  void toggleTheme() {
+    _isDarkMode = !_isDarkMode;
+    notifyListeners();
+  }
+
   // Data extracted directly from your CV
   final List<Skill> _skills = [
     Skill('Flutter'),
