@@ -75,7 +75,7 @@ class PortfolioViewModel extends ChangeNotifier {
   final String name = "Tarek Mohammed";
   final String title = "Junior Flutter Developer";
   final String bio =
-      "Hands-on experience developing complete applications from concept to deployment. Specialized in AI integration, Clean Architecture, and efficient State Management.";
+      "Crafting production-ready Flutter applications with a focus on AI integration, Clean Architecture, and optimized performance.";
   final String profileImagePath =
       "assets/images/tarek_linkedin_profile_picture.png";
 
