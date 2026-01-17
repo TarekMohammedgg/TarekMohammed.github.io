@@ -85,7 +85,7 @@ class StatsSection extends StatelessWidget {
             style: TextStyle(
               fontSize: isDesktop ? 32 : 24,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: theme.colorScheme.onSurface,
             ),
           ),
           const SizedBox(height: 4),
@@ -93,7 +93,7 @@ class StatsSection extends StatelessWidget {
             stat.label,
             style: TextStyle(
               fontSize: isDesktop ? 14 : 12,
-              color: Colors.white60,
+              color: theme.colorScheme.onSurface.withOpacity(0.6),
               fontWeight: FontWeight.w500,
             ),
           ),

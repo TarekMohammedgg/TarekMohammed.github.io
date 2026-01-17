@@ -48,6 +48,7 @@ class MyPortfolioApp extends StatelessWidget {
   }
 
   ThemeData _buildLightTheme() {
+    const darkTextColor = Color(0xFF1A1A2E);
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
@@ -55,28 +56,38 @@ class MyPortfolioApp extends StatelessWidget {
         seedColor: const Color(0xFF3C78FF),
         brightness: Brightness.light,
         primary: const Color(0xFF3C78FF),
-        secondary: const Color(0xFF0099CC),
-        surface: const Color(0xFFF5F5F5),
+        onPrimary: Colors.white,
+        secondary: const Color(0xFF00B8D4),
+        surface: Colors.white,
+        onSurface: darkTextColor,
       ),
-      scaffoldBackgroundColor: const Color(0xFFF0F0F5),
-      cardTheme: CardThemeData(
-        color: Colors.white,
-        elevation: 4,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      ),
+      scaffoldBackgroundColor:
+          Colors.grey.shade300, // Sophisticated off-white shade
       textTheme: const TextTheme(
         displayLarge: TextStyle(
           fontWeight: FontWeight.bold,
-          color: Colors.black87,
+          color: darkTextColor,
         ),
         displayMedium: TextStyle(
           fontWeight: FontWeight.bold,
-          color: Colors.black87,
+          color: darkTextColor,
         ),
         displaySmall: TextStyle(
           fontWeight: FontWeight.bold,
-          color: Colors.black87,
+          color: darkTextColor,
         ),
+        headlineMedium: TextStyle(
+          fontWeight: FontWeight.bold,
+          color: darkTextColor,
+        ),
+        titleLarge: TextStyle(
+          fontWeight: FontWeight.bold,
+          color: darkTextColor,
+        ),
+        titleMedium: TextStyle(color: darkTextColor),
+        bodyLarge: TextStyle(color: darkTextColor),
+        bodyMedium: TextStyle(color: darkTextColor),
+        bodySmall: TextStyle(color: Color(0xFF505070)),
       ),
     );
   }

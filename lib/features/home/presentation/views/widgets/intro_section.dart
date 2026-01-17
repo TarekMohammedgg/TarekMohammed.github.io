@@ -126,7 +126,7 @@ class IntroSection extends StatelessWidget {
           fit: BoxFit.cover,
           errorBuilder: (context, error, stackTrace) {
             return Container(
-              color: const Color(0xFF161622),
+              color: theme.colorScheme.surfaceContainerHighest,
               child: Icon(
                 Icons.person,
                 size: 60,
@@ -143,7 +143,7 @@ class IntroSection extends StatelessWidget {
     return Text(
       "Hi, I am",
       style: theme.textTheme.titleLarge?.copyWith(
-        color: Colors.white70,
+        color: theme.colorScheme.onSurface.withOpacity(0.7),
         fontWeight: FontWeight.w300,
       ),
     );
@@ -154,7 +154,7 @@ class IntroSection extends StatelessWidget {
       vm.name,
       style: theme.textTheme.displaySmall?.copyWith(
         fontWeight: FontWeight.bold,
-        color: Colors.white,
+        color: theme.colorScheme.onSurface,
         letterSpacing: -0.5,
       ),
     );
@@ -188,7 +188,7 @@ class IntroSection extends StatelessWidget {
       vm.bio,
       textAlign: isDesktop ? TextAlign.left : TextAlign.center,
       style: theme.textTheme.bodyLarge?.copyWith(
-        color: Colors.grey[400],
+        color: theme.colorScheme.onSurface.withOpacity(0.8),
         height: 1.6,
       ),
     );
@@ -204,8 +204,8 @@ class IntroSection extends StatelessWidget {
       icon: const Icon(Icons.download_rounded),
       label: const Text("Download CV"),
       style: ElevatedButton.styleFrom(
-        backgroundColor: theme.colorScheme.secondary,
-        foregroundColor: Colors.black,
+        backgroundColor: theme.colorScheme.primary,
+        foregroundColor: theme.colorScheme.onPrimary,
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 4,

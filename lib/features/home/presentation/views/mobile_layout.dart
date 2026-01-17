@@ -14,63 +14,61 @@ class MobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     final vm = context.watch<PortfolioViewModel>();
 
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Intro Section
-              const IntroSection(isDesktop: false),
-              const SizedBox(height: 40),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // Intro Section
+            const IntroSection(isDesktop: false),
+            const SizedBox(height: 40),
 
-              // Stats Section
-              const StatsSection(isDesktop: false),
-              const SizedBox(height: 50),
+            // Stats Section
+            const StatsSection(isDesktop: false),
+            const SizedBox(height: 50),
 
-              // Projects Section
-              _buildSectionHeader(
-                context,
-                "Featured Projects",
-                Icons.work_outline,
-              ),
-              const SizedBox(height: 24),
-              ListView.separated(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: vm.projects.length,
-                separatorBuilder: (_, __) => const SizedBox(height: 20),
-                itemBuilder: (context, index) {
-                  return SizedBox(
-                    height: 300,
-                    child: ProjectCard(project: vm.projects[index]),
-                  );
-                },
-              ),
-              const SizedBox(height: 50),
+            // Projects Section
+            _buildSectionHeader(
+              context,
+              "Featured Projects",
+              Icons.work_outline,
+            ),
+            const SizedBox(height: 24),
+            ListView.separated(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: vm.projects.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 20),
+              itemBuilder: (context, index) {
+                return SizedBox(
+                  height: 300,
+                  child: ProjectCard(project: vm.projects[index]),
+                );
+              },
+            ),
+            const SizedBox(height: 50),
 
-              // Skills Section
-              _buildSectionHeader(context, "Technical Skills", Icons.code),
-              const SizedBox(height: 24),
-              Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                alignment: WrapAlignment.center,
-                children: vm.skills
-                    .map((skill) => SkillChip(skill: skill))
-                    .toList(),
-              ),
-              const SizedBox(height: 50),
+            // Skills Section
+            _buildSectionHeader(context, "Technical Skills", Icons.code),
+            const SizedBox(height: 24),
+            Wrap(
+              spacing: 10,
+              runSpacing: 10,
+              alignment: WrapAlignment.center,
+              children: vm.skills
+                  .map((skill) => SkillChip(skill: skill))
+                  .toList(),
+            ),
+            const SizedBox(height: 50),
 
-              // About Me Section
-              const AboutMeSection(isDesktop: false),
-              const SizedBox(height: 50),
+            // About Me Section
+            const AboutMeSection(isDesktop: false),
+            const SizedBox(height: 50),
 
-              // Footer
-              _buildFooter(context),
-            ],
-          ),
+            // Footer
+            _buildFooter(context),
+          ],
         ),
       ),
     );
@@ -101,7 +99,7 @@ class MobileLayout extends StatelessWidget {
         Text(
           title,
           style: theme.textTheme.headlineSmall?.copyWith(
-            color: Colors.white,
+            color: theme.colorScheme.onSurface,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -121,16 +119,17 @@ class MobileLayout extends StatelessWidget {
   }
 
   Widget _buildFooter(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24),
       child: Column(
         children: [
-          Divider(color: Colors.white.withOpacity(0.1)),
+          Divider(color: theme.colorScheme.onSurface.withOpacity(0.1)),
           const SizedBox(height: 16),
           Text(
             "© 2026 Tarek Mohammed",
             style: TextStyle(
-              color: Colors.white.withOpacity(0.5),
+              color: theme.colorScheme.onSurface.withOpacity(0.5),
               fontSize: 13,
             ),
           ),
@@ -138,7 +137,7 @@ class MobileLayout extends StatelessWidget {
           Text(
             "Built with Flutter ❤️",
             style: TextStyle(
-              color: Colors.white.withOpacity(0.4),
+              color: theme.colorScheme.onSurface.withOpacity(0.4),
               fontSize: 12,
             ),
           ),

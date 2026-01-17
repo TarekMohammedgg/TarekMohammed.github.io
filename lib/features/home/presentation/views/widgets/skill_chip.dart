@@ -30,13 +30,10 @@ class _SkillChipState extends State<SkillChip> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: _isHovered
-                ? [
-                    theme.colorScheme.primary.withOpacity(0.4),
-                    theme.colorScheme.secondary.withOpacity(0.2),
-                  ]
+                ? [theme.colorScheme.primary, theme.colorScheme.secondary]
                 : [
-                    theme.colorScheme.primary.withOpacity(0.15),
-                    const Color(0xFF161622),
+                    theme.colorScheme.primary.withOpacity(0.1),
+                    theme.colorScheme.surface,
                   ],
           ),
           borderRadius: BorderRadius.circular(30),
@@ -59,7 +56,9 @@ class _SkillChipState extends State<SkillChip> {
         child: Text(
           widget.skill.name,
           style: TextStyle(
-            color: _isHovered ? Colors.white : Colors.white.withOpacity(0.9),
+            color: _isHovered
+                ? theme.colorScheme.onPrimary
+                : theme.colorScheme.onSurface,
             fontWeight: _isHovered ? FontWeight.w600 : FontWeight.w500,
             fontSize: 14,
           ),

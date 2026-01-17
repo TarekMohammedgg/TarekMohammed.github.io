@@ -100,7 +100,7 @@ class _SocialButtonState extends State<_SocialButton> {
                   backgroundColor: _isHovered
                       ? theme.colorScheme.primary.withOpacity(0.9)
                       : theme.colorScheme.primary,
-                  foregroundColor: Colors.black,
+                  foregroundColor: theme.colorScheme.onPrimary,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 24,
                     vertical: 16,
@@ -119,7 +119,7 @@ class _SocialButtonState extends State<_SocialButton> {
                 style: OutlinedButton.styleFrom(
                   foregroundColor: _isHovered
                       ? theme.colorScheme.primary
-                      : Colors.white70,
+                      : theme.colorScheme.onSurface.withOpacity(0.7),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 24,
                     vertical: 16,
@@ -127,7 +127,7 @@ class _SocialButtonState extends State<_SocialButton> {
                   side: BorderSide(
                     color: _isHovered
                         ? theme.colorScheme.primary
-                        : Colors.white30,
+                        : theme.colorScheme.onSurface.withOpacity(0.2),
                     width: _isHovered ? 2 : 1,
                   ),
                   shape: RoundedRectangleBorder(

@@ -56,7 +56,7 @@ class AboutMeSection extends StatelessWidget {
               Text(
                 "About Me",
                 style: theme.textTheme.headlineMedium?.copyWith(
-                  color: Colors.white,
+                  color: theme.colorScheme.onSurface,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -68,7 +68,7 @@ class AboutMeSection extends StatelessWidget {
           Text(
             vm.aboutMeIntro,
             style: theme.textTheme.bodyLarge?.copyWith(
-              color: Colors.grey[300],
+              color: theme.colorScheme.onSurface.withOpacity(0.8),
               height: 1.6,
             ),
           ),
@@ -127,7 +127,7 @@ class AboutMeSection extends StatelessWidget {
                   child: Text(
                     vm.aboutMeDetail,
                     style: theme.textTheme.bodyMedium?.copyWith(
-                      color: Colors.grey[400],
+                      color: theme.colorScheme.onSurface.withOpacity(0.7),
                       height: 1.6,
                     ),
                   ),
@@ -190,7 +190,7 @@ class AboutMeSection extends StatelessWidget {
               Text(
                 subtitle,
                 style: theme.textTheme.titleMedium?.copyWith(
-                  color: Colors.white,
+                  color: theme.colorScheme.onSurface,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -201,7 +201,7 @@ class AboutMeSection extends StatelessWidget {
                   child: Text(
                     detail,
                     style: theme.textTheme.bodySmall?.copyWith(
-                      color: Colors.grey[400],
+                      color: theme.colorScheme.onSurface.withOpacity(0.6),
                       height: 1.4,
                     ),
                   ),
