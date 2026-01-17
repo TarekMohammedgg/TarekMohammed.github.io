@@ -63282,7 +63282,7 @@ case 2:if(!c)throw A.h(A.du("Could not launch "+q.i(0)))
 return A.N(null,r)}})
 return A.O($async$jc,r)}}
 A.B5.prototype={
-M(a){var s,r=null,q=A.iC(a,!0,t.mK),p=A.dw(a,r,t.w).w.a.a>1200,o=p?80:40,n=this.Do(a,"Featured Projects",B.hi),m=p?3:2,l=this.Do(a,"Technical Skills",B.e_),k=q.b,j=A.Y(k).h("a3<1,hI>")
+M(a){var s,r=null,q=A.iC(a,!0,t.mK),p=A.dw(a,r,t.w).w.a.a>1200,o=p?80:40,n=this.Do(a,"Main Projects",B.hi),m=p?3:2,l=this.Do(a,"Technical Skills",B.e_),k=q.b,j=A.Y(k).h("a3<1,hI>")
 k=A.V(new A.a3(k,new A.Pv(),j),j.h("ar.E"))
 k=A.a2i(B.bR,k,12,12)
 j=A.ak(a).ax.k3
@@ -63301,7 +63301,7 @@ A.Pv.prototype={
 $1(a){return new A.hI(a,null)},
 $S:153}
 A.CI.prototype={
-M(a){var s,r=null,q=A.iC(a,!0,t.mK),p=this.CK(a,"Featured Projects",B.hi),o=A.ao3(new A.Wn(q),3,B.pI,new A.Wo(),!0),n=this.CK(a,"Technical Skills",B.e_),m=q.b,l=A.Y(m).h("a3<1,hI>")
+M(a){var s,r=null,q=A.iC(a,!0,t.mK),p=this.CK(a,"Main Projects",B.hi),o=A.ao3(new A.Wn(q),3,B.pI,new A.Wo(),!0),n=this.CK(a,"Technical Skills",B.e_),m=q.b,l=A.Y(m).h("a3<1,hI>")
 m=A.V(new A.a3(m,new A.Wp(),l),l.h("ar.E"))
 m=A.a2i(B.iC,m,10,10)
 l=A.ak(a).ax.k3
@@ -63629,7 +63629,7 @@ $S:0}
 A.vM.prototype={
 M(a){var s,r
 A.iC(a,!0,t.mK)
-s=A.c([new A.j5("3+","Projects",B.A5),new A.j5("1+","Years Exp",B.zZ),new A.j5("18+","Skills",B.e_)],t.Wy)
+s=A.c([new A.j5("3+","Main Projects",B.A5),new A.j5("1+","Years Exp",B.zZ),new A.j5("18+","Skills",B.e_)],t.Wy)
 if(this.c){r=t.CF
 r=A.V(new A.a3(s,new A.a0N(this,a),r),r.h("ar.E"))
 return A.fc(r,B.S,B.pr,B.T)}r=t.CF
