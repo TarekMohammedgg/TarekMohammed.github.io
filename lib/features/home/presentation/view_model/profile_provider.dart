@@ -58,7 +58,7 @@ class PortfolioViewModel extends ChangeNotifier {
           'A complete stock management application for inventory tracking and sales.',
       tags: ['Flutter', 'Firebase', 'Provider', 'Inventory'],
       githubUrl: 'https://github.com/TarekMohammedgg/Stock-App',
-      imagePath: null, // Add stock_project.png to assets/images/
+      imagePath: 'assets/images/stock_project.png',
     ),
   ];
 
