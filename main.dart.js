@@ -63628,7 +63628,7 @@ $S:0}
 A.vM.prototype={
 M(a){var s,r
 A.iC(a,!0,t.mK)
-s=A.c([new A.j5("4+","Main Projects",B.A5),new A.j5("1+","Years Exp",B.zZ),new A.j5("18+","Skills",B.e_)],t.Wy)
+s=A.c([new A.j5("4+","Main Projects",B.A5),new A.j5("2+","Years Exp",B.zZ),new A.j5("18+","Skills",B.e_)],t.Wy)
 if(this.c){r=t.CF
 r=A.V(new A.a3(s,new A.a0N(this,a),r),r.h("ar.E"))
 return A.fc(r,B.S,B.pr,B.T)}r=t.CF
