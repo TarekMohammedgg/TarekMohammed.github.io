@@ -45,6 +45,14 @@ class PortfolioViewModel extends ChangeNotifier {
       imagePath: 'assets/images/skintelligent_project.png',
     ),
     Project(
+      title: 'Artifex AI',
+      description:
+          'Multi-platform AI application combining conversational AI, image generation, and advanced image editing features.',
+      tags: ['Flutter', 'Google Gemini', 'Stability AI', 'OCR'],
+      githubUrl: null, // Add GitHub URL if available
+      imagePath: null, // Add artifex_ai_project.png to assets/images/
+    ),
+    Project(
       title: 'Restaurant App',
       description:
           'A fully responsive restaurant management solution with Firebase Auth.',
