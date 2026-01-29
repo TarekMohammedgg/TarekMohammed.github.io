@@ -76,7 +76,7 @@ class PortfolioViewModel extends ChangeNotifier {
 
   // Stats
   int get projectCount => _projects.length;
-  int get yearsOfExperience => 1; // Update this as needed
+  int get yearsOfExperience => 2; // Update this as needed
   int get skillCount => _skills.length;
 
   // Profile Info
