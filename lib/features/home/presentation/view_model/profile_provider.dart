@@ -45,12 +45,20 @@ class PortfolioViewModel extends ChangeNotifier {
       imagePath: 'assets/images/skintelligent_project.png',
     ),
     Project(
+      title: 'Stock App',
+      description:
+          'A complete stock management application for inventory tracking and sales.',
+      tags: ['Flutter', 'Firebase', 'Provider', 'Inventory'],
+      githubUrl: 'https://github.com/TarekMohammedgg/Stock-App',
+      imagePath: 'assets/images/stock_project.png',
+    ),
+    Project(
       title: 'Artifex AI',
       description:
           'Multi-platform AI application combining conversational AI, image generation, and advanced image editing features.',
       tags: ['Flutter', 'Google Gemini', 'Stability AI', 'OCR'],
       githubUrl: null, // Add GitHub URL if available
-      imagePath: null, // Add artifex_ai_project.png to assets/images/
+      imagePath: 'assets/images/artifex-ai.png',
     ),
     Project(
       title: 'Restaurant App',
@@ -59,14 +67,6 @@ class PortfolioViewModel extends ChangeNotifier {
       tags: ['Flutter', 'Firebase Auth', 'go_router', 'Responsive'],
       githubUrl: 'https://github.com/TarekMohammedgg/resturant_app',
       imagePath: 'assets/images/restaurant_project.png',
-    ),
-    Project(
-      title: 'Stock App',
-      description:
-          'A complete stock management application for inventory tracking and sales.',
-      tags: ['Flutter', 'Firebase', 'Provider', 'Inventory'],
-      githubUrl: 'https://github.com/TarekMohammedgg/Stock-App',
-      imagePath: 'assets/images/stock_project.png',
     ),
   ];
 
